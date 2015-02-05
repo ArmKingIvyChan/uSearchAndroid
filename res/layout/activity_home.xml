@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+	<LinearLayout 
+	    android:id="@+id/welcomelayout"
+	    android:orientation="vertical"
+	    android:layout_width="match_parent"
+	    android:background="#EEEEEE"
+	    android:layout_height="100dp">
+	    <TextView android:id="@+id/welcomeinfo"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/Welcome_to_use"
+	        android:textSize="22sp"
+	        android:layout_marginTop="25dp"
+	        android:gravity="center_horizontal"
+	        android:textColor="@android:color/black"/>
+	    <TextView android:id="@+id/welcomelogo"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="uSearch"
+	        android:textSize="24sp"
+	        android:textStyle="italic"
+	        android:layout_marginTop="5dp"
+	        android:gravity="center_horizontal"
+	        android:textColor="#2AB2E4"/>
+	</LinearLayout>
+	<LinearLayout
+	    android:id="@+id/layout1"
+	     android:orientation="vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="68dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_below="@id/welcomelayout"
+	    >
+	    <TextView android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:text="@string/Help"
+	        android:paddingLeft="10dp"
+	        android:gravity="center_vertical"
+	        android:textSize="16sp"
+	        android:background="#DDDDDD"
+	        android:textColor="#B7B7B7"/>
+	    <TextView
+	        android:id="@+id/instruction" 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="2"
+	         android:paddingLeft="10dp"
+	        android:gravity="center_vertical"
+	        android:text="@string/Instruction_book"
+	        android:textSize="20sp"
+	        android:textStyle="bold"
+	        android:background="#EEEEEE"
+	        android:textColor="#2A2A2A"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/layout2"
+	    android:orientation="vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="68dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_below="@id/layout1"
+	    >
+	    <TextView android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:text="@string/Feedback"
+	        android:paddingLeft="10dp"
+	        android:gravity="center_vertical"
+	        android:textSize="16sp"
+	        android:background="#DDDDDD"
+	        android:textColor="#B7B7B7"/>
+	    <TextView 
+	        android:id="@+id/contactus"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="2"
+	         android:paddingLeft="10dp"
+	        android:gravity="center_vertical"
+	        android:text="@string/How_to_contact_us"
+	        android:textSize="20sp"
+	        android:textStyle="bold"
+	        android:background="#EEEEEE"
+	        android:textColor="#2A2A2A"/>
+	</LinearLayout>
+   
+   <LinearLayout android:orientation="vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="68dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_below="@id/layout2"
+	    >
+	    <TextView android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:text="@string/Visit"
+	        android:paddingLeft="10dp"
+	        android:gravity="center_vertical"
+	        android:textSize="16sp"
+	        android:background="#DDDDDD"
+	        android:textColor="#B7B7B7"/>
+	    <TextView 
+	        android:id="@+id/loadweb"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="2"
+	         android:paddingLeft="10dp"
+	        android:gravity="center_vertical"
+	        android:text="@string/Official_Website"
+	        android:textSize="20sp"
+	        android:textStyle="bold"
+	        android:background="#EEEEEE"
+	        android:textColor="#2A2A2A"/>
+	</LinearLayout>
+
+</RelativeLayout>
